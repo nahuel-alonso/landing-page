@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Sigmar&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+body {
+    background: rgb(32, 32, 32);
+}
+/* Navbar */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+.logo img {
+    max-height: 80px;
+}
+.logo img:hover {
+    transform: scale(1.1);
+}
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+}
+.navbar li {
+    margin: 0 10px;
+}
+.navbar li:hover {
+    transform: scale(1.1);
+}
+.navbar a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(34, 195, 133);
+}
+
+/* Hero */
+.hero {
+    padding: 70px 0px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero-info {
+    display: flex;
+    flex-direction: column;
+}
+.hero-info h2 {
+    color: rgb(34, 195, 133);
+    font-size: 70px;
+}
+.hero-info p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    padding-right: 4rem;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(34, 195, 133);
+}
+.logo-redes {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+}
+.logo-redes img {
+    width: 4.3rem;
+    padding: 10px;
+}
+.logo-redes img:hover {
+    transform: scale(1.1);
+}
+.hero-foto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-foto img {
+    width: 380px;
+    height:380px;
+    border-radius:200px;
+    box-shadow: 0 14px 28px black;
+    transition: .3s;
+}
+.hero-foto img:hover {
+    transform: scale(1.1);
+}
+
+/* Contenido-info */
+.info-title {
+    padding-top: 200px;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    color: rgb(34, 195, 133);
+}
+.info {
+    padding: 80px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+.info-texto {
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    margin: 50px;
+}
+.info-texto p {
+    padding: 70px;
+}
+.info-img {
+    margin: 80px;
+}
+.info-img img {
+    width: 20rem;
+}
+/* Seccion Skills */
+.skills-container {
+    padding: 10rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(79, 78, 78);
+    margin: 3rem;
+    border-radius: 2rem;
+}
+.skills-title {
+    color: rgb(34, 195, 133);
+    padding: 1rem;
+    font-size: 2rem;
+}
+.skills-logo {
+    display: flex;
+    gap: 5rem;
+}
+.skills-logo img {
+    width: 5rem;
+    cursor: pointer;
+}
+.skills-logo img:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* MediaQueries */
+@media (max-width: 1440px) and (min-width: 1024px) {
+    /* Seccion Hero */
+    .hero-info h2 {
+        font-size: 3.2rem;
+    }
+
+    .hero-info p {
+        font-size: 1.2rem;
+        padding-right: 4rem;
+    }
+
+    .hero-foto img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .logo-redes {
+        padding-right: 4rem;
+    }
+
+    /* Seccion Sobre mi */
+    .info-title {
+        font-size: 2.5rem;
+        
+    }
+
+    .info-texto {
+        font-size: 1.2rem;
+
+    }
+}
+@media (max-width: 1023px) {
+    /* Seccion Hero */
+    .hero-info h2 {
+        font-size: 3.2rem;
+    }
+
+    .hero-info p {
+        font-size: 1.2rem;
+        padding-right: 4rem;
+    }
+    
+    .hero-foto img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .logo-redes {
+        padding-right: 4rem;
+    }
+
+    /* Seccion Sobre mi */
+    .info-title {
+        font-size: 2.5rem;
+        
+    }
+
+    .info-texto {
+        font-size: 1.2rem;
+
+    }
+}
